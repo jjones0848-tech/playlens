@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>PlayLens — See the whole play. Know your job.</title>
+  <meta name="description" content="Learn your football playbook: animated plays, all 22 players, and your job on every play.">
+  <meta name="theme-color" content="#2F6B3A">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+  <header class="topbar">
+    <a href="#/" class="brand" aria-label="PlayLens home">PlayLens</a>
+    <nav>
+      <button id="coachToggle" class="toggle-btn" aria-pressed="false">Coach tools</button>
+      <a href="#/settings" class="nav-link">Settings</a>
+    </nav>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>PlayLens needs JavaScript turned on.</noscript>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
